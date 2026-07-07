@@ -287,6 +287,10 @@ a:hover {
   margin-bottom: 10px;
 }
 
+.home-wrapper .email div {
+  line-height: 1.5;
+}
+
 [data-bs-theme=dark] .home-wrapper .email {
   color: var(--night-text-muted);
 }

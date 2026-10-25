@@ -8,7 +8,7 @@
     content="Sarvesh Prasanth Venkatesan — ECE MS student at USC specializing in Machine Learning and Robotics.">
   <meta name="author" content="Sarvesh Prasanth Venkatesan">
   <meta name="keywords"
-    content="Sarvesh Prasanth Venkatesan, Robotics, Robot Learning, Machine Learning, Computer Vision, Reinforcement Learning, Legged Robots, USC">
+    content="Sarvesh Prasanth Venkatesan, Robotics, Robot Learning, Machine Learning, Computer Vision, Reinforcement Learning, Legged Robots, Humanoid Robots, VLA, USC">
   <title>Sarvesh Prasanth Venkatesan</title>
 
   <link rel="shortcut icon" href="assets/favicon/favicon.ico">
@@ -70,17 +70,12 @@
       <div class="row section-item">
         <div class="col col-wrapper">
           <p>
-            I am an M.S. student in ECE (Machine Learning) at
-            <a href="https://www.usc.edu/">USC</a>, broadly interested in robot learning —
-            particularly teaching robots to move and manipulate in the real world.
-            I currently do research at the
-            <a href="https://sites.usc.edu/quann/">Dynamic Robotics and Control Laboratory</a>
-            with Prof. Quan Nguyen.
-            Before USC, I spent two years at
-            <a href="https://www.iisc.ac.in/">IISc Bengaluru</a>
-            working on legged robots and multi-robot systems,
-            and interned at <a href="https://www.iitm.ac.in/">IIT Madras</a>
-            on service robotics.
+            I make robots move and act in the real world, using
+            <strong>reinforcement learning</strong>, <strong>imitation learning</strong>, and
+            <strong>vision-language-action models</strong> to take policies from simulation to real hardware.
+            Currently, I'm an M.S. student at <a href="https://www.usc.edu/">USC</a> working on humanoid control with
+            <a href="https://sites.usc.edu/quann/">Prof. Quan Nguyen</a>, and an RL research intern at
+            <a href="https://plus.ai/">PlusAI</a>.
           </p>
           <br>
           <a class="read-more-link" data-bs-toggle="collapse" href="#more-content" id="more-trigger">
@@ -105,8 +100,9 @@
             <li>Reinforcement Learning</li>
             <li>Imitation Learning</li>
             <li>Legged Locomotion</li>
-            <li>Dexterous Manipulation</li>
+            <li>Vision-Language-Action Models</li>
             <li>Humanoid Robots</li>
+            <li>Autonomous Driving</li>
             <li>Computer Vision</li>
             <li>Sim-to-Real Transfer</li>
           </ul>
@@ -123,6 +119,24 @@
         </div>
       </div>
 
+      <!-- PlusAI -->
+      <div class="experience-item row align-items-start">
+        <div class="col-md-2 col-sm-3 col-4">
+          <img src="assets/exp/plusai.svg" class="img-fluid" alt="PlusAI logo">
+        </div>
+        <div class="col-md-10 col-sm-9 col-8">
+          <div class="exp-role">RL Planner Research Intern</div>
+          <div class="exp-org">
+            <a href="https://plus.ai/">PlusAI</a>,
+            Santa Clara, CA
+          </div>
+          <div class="exp-period">Aug 2026 – Present</div>
+          <div class="exp-desc">
+            RL safety layer for autonomous-driving in long-tail scenarios.
+          </div>
+        </div>
+      </div>
+
       <!-- USC DRCL -->
       <div class="experience-item row align-items-start">
         <div class="col-md-2 col-sm-3 col-4">
@@ -136,8 +150,7 @@
           </div>
           <div class="exp-period">Dec 2025 – Present &nbsp;·&nbsp; Advisor: Prof. Quan Nguyen</div>
           <div class="exp-desc">
-            Working on hierarchical RL policies for humanoid loco-manipulation and demonstration-guided RL for dexterous
-            manipulation.
+            Humanoid robot learning — perceptive whole-body control (<strong>ViBe</strong>) and VLA post-training.
           </div>
         </div>
       </div>
@@ -155,8 +168,8 @@
           </div>
           <div class="exp-period">Jul 2024 – Aug 2025 &nbsp;·&nbsp; Advisor: Prof. Shishir Kolathaya</div>
           <div class="exp-desc">
-            Developed <strong>GRoQ-LoCO</strong>, a generalist quadruped policy with zero-shot transfer across robot
-            morphologies, and RL controllers for the 70&nbsp;kg Stoch5 with improved sim-to-real transfer.
+            Quadruped locomotion — a cross-embodiment generalist policy (<strong>GRoQ-LoCO</strong>) and sim-to-real RL
+            on the 70&nbsp;kg Stoch5.
           </div>
         </div>
       </div>
@@ -174,8 +187,7 @@
           </div>
           <div class="exp-period">Sep 2023 – Jun 2024 &nbsp;·&nbsp; Advisor: Prof. Debashish Ghose</div>
           <div class="exp-desc">
-            Built a UAV–UGV multi-agent system for autonomous plantation inspection, and co-developed
-            <strong>LocalizeSORT</strong>, a world-coordinate-based tracker with +15% HOTA improvement.
+            UAV–UGV multi-robot inspection and multi-object tracking (<strong>LocalizeSORT</strong>).
           </div>
         </div>
       </div>
@@ -193,8 +205,7 @@
           </div>
           <div class="exp-period">Sep 2022 – Jul 2023 &nbsp;·&nbsp; Advisor: Prof. Prabhu Rajagopal</div>
           <div class="exp-desc">
-            Built the full stack for a Shopping Assistance Robot — autonomous navigation with SLAM, object detection
-            with YOLO + RGBD, and pick-and-place with MoveIt.
+            Navigation and pick-and-place for a shopping-assistance robot.
           </div>
         </div>
       </div>
@@ -210,6 +221,52 @@
           <div class="section-title">Publications</div>
         </div>
       </div>
+
+      <!-- Paper 0: ViBe -->
+      <div class="section-item">
+        <div class="row align-items-center">
+          <div class="col-xs-12 col-md-auto col-wrapper">
+            <div class="figure">
+              <a href="https://lok-i.github.io/vibe-control/">
+                <img src="assets/vibe/vibe.webp" alt="ViBe perceptive humanoid whole-body control">
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md col-wrapper">
+            <div class="title">
+              <a href="https://lok-i.github.io/vibe-control/">
+                ViBe: Visual Behavior Adaptation for Perceptive Humanoid Whole-Body Control
+              </a>
+            </div>
+            <div class="authors">
+              <a href="https://lok-i.github.io/website/">Lokesh Krishna</a>,
+              <me>Sarvesh Venkatesan</me>,
+              <a href="https://www.linkedin.com/in/an-zhang-0425b2260/">An Zhang</a>,
+              <a href="https://viterbi.usc.edu/directory/faculty/Nguyen/Quan">Quan Nguyen</a>
+            </div>
+            <div class="link">
+              <span class="venue">arXiv 2026</span>
+              <a href="https://lok-i.github.io/vibe-control/">Project page</a>
+              <a href="https://arxiv.org/abs/2609.09918">arXiv</a>
+              <a href="https://github.com/lok-i/vibe">Code</a>
+              <a data-bs-toggle="collapse" href="#bibtex-vibe" onclick="return false">BibTeX</a>
+            </div>
+          </div>
+        </div>
+        <div class="collapse" id="bibtex-vibe">
+          <div class="row align-items-center">
+            <div class="col col-wrapper">
+              <pre class="snippet"><code>@article{krishna2026vibe,
+  title={ViBe: Visual Behavior Adaptation for Perceptive Humanoid Whole-Body Control},
+  author={Krishna, Lokesh and Venkatesan, Sarvesh and Zhang, An and Nguyen, Quan},
+  journal={arXiv preprint arXiv:2609.09918},
+  year={2026}
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Paper 0 -->
 
       <!-- Paper 1: GRoQ-LoCO -->
       <div class="section-item">
